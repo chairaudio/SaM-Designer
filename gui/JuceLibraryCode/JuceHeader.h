@@ -10,8 +10,7 @@
 
 */
 
-#ifndef __APPHEADERFILE_VKFX9M__
-#define __APPHEADERFILE_VKFX9M__
+#pragma once
 
 #include "AppConfig.h"
 
@@ -39,5 +38,3 @@ namespace ProjectInfo
     const int          versionNumber  = 0x402;
 }
 #endif
-
-#endif   // __APPHEADERFILE_VKFX9M__
