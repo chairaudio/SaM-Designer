@@ -32,8 +32,6 @@ support.
 ## Setup
 
 The Synth-A-ModelerGUI project is heavily using the [JUCE][1] library.
-It also depends on Google's [re2][2] regular expression library for
-parsing Synth-A-Modeler `*.mdl` files.
 
 ### Get the sources and dependencies
 
@@ -47,18 +45,6 @@ Without the switch you have to seperately get the submodule.
     git clone https://github.com/ptrv/SaM-Designer.git
     cd SaM-Designer
     git submodule update --init
-
-Also there is a dependency on [re2][2], the regular expression library
-used in this project, which is also a submodule of this project.
-
-For Mac OS X and Windows there are already binaries of the library
-provided, on Linux consider the following steps to get and compile the
-library:
-
-    cd SaM-Designer
-    git submodule update --init
-    cd gui/Libs
-    ./build_re2.sh
 
 ### Compiling Projucer
 
