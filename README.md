@@ -36,7 +36,7 @@ The Synth-A-ModelerGUI project is heavily using the [JUCE][1] library.
 
 ### Get the sources and dependencies
 
-Install Pure-lang and Faust https://github.com/agraef/pure-lang
+Install [Pure-lang](https://github.com/agraef/pure-lang) and [Faust](https://github.com/grame-cncm/faust) 
 Faust needs to be version < 1, otherwhise you might get 
 `physicalmodeling.lib : 67 : ERROR : syntax error, unexpected ENABLE, expecting RBRAQ or IDENT`
 on exporting to binary from SaM
