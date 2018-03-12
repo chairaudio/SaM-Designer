@@ -60,23 +60,23 @@ library:
     cd gui/Libs
     ./build_re2.sh
 
-### Compiling Introjucer
+### Compiling Projucer
 
-Introjucer is part of the JUCE library. It is the project manager for
+Projucer is part of the JUCE library. It is the project manager for
 JUCE projects. Every time you have to make changes to the
 Synth-A-ModelerGUI projects (i.e. add new source files, change compile
-options), you have to use the Introjucer application. But first it must
+options), you have to use the Proojucer application. But first it must
 be compiled.
 
 Depending on your development machine there are project files for several
 platforms. For linux:
 
     cd SaM-Designer
-    cd juce/extras/Introjucer/Builds/Linux
+    cd juce/extras/Projucer/Builds/Linux
     make
-    build/Introjucer
+    build/Projucer
 
-With the Introjucer you can now open `*.jucer` files, like the one at the
+With the Projucer you can now open `*.jucer` files, like the one at the
 `SaM-Designer/gui` path.
 
 ### Compiling Synth-A-Modeler Designer
