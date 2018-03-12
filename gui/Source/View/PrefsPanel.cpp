@@ -387,8 +387,8 @@ public:
         text2.append ("Synth-A-Modeler-Designer v" + JUCEApplication::getInstance()->getApplicationVersion()
                         + buildDate + ", " + SystemStats::getJUCEVersion(), Font (12.0f, Font::bold));
 
-        addAndMakeVisible (link = new HyperlinkButton("https://github.com/ptrv/SaM-Designer",
-                                                      URL("https://github.com/ptrv/SaM-Designer")));
+        addAndMakeVisible (link = new HyperlinkButton("https://github.com/chairaudio/SaM-Designer",
+                                                      URL("https://github.com/chairaudio/SaM-Designer")));
         link->setFont (Font (10.0f, Font::bold | Font::underlined), true);
     }
 
