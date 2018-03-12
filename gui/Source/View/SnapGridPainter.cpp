@@ -81,7 +81,7 @@ void SnapGridPainter::draw (Graphics& g)
         }
 
         g.setColour (col.withAlpha (0.2f));
-        g.setPixel (0, 0);
+        g.fillRect (0, 0, 1, 1);
     }
 
     if (backgroundFill.isValid())

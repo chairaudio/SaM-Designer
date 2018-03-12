@@ -1,18 +1,18 @@
 /*
   ==============================================================================
 
-  This is an automatically generated GUI class created by the Introjucer!
+  This is an automatically generated GUI class created by the Projucer!
 
   Be careful when adding custom code to these files, as only the code within
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
   and re-saved.
 
-  Created with Introjucer version: 3.1.1
+  Created with Projucer version: 5.2.1
 
   ------------------------------------------------------------------------------
 
-  The Introjucer is part of the JUCE library - "Jules' Utility Class Extensions"
-  Copyright 2004-13 by Raw Material Software Ltd.
+  The Projucer is part of the JUCE library.
+  Copyright (c) 2017 - ROLI Ltd.
 
   ==============================================================================
 */
@@ -44,6 +44,8 @@ MiscPage::MiscPage ()
     laDatDir->setColour (TextEditor::textColourId, Colours::black);
     laDatDir->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
 
+    laDatDir->setBounds (8, 8, 150, 24);
+
     addAndMakeVisible (fcDataDir = new FilenameComponent ("Synth-A-Modeler data directory:",
                                                           File::nonexistent,
                                                           true, true, false,
@@ -57,6 +59,8 @@ MiscPage::MiscPage ()
     laFaustDir->setEditable (false, false, false);
     laFaustDir->setColour (TextEditor::textColourId, Colours::black);
     laFaustDir->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
+    laFaustDir->setBounds (8, 64, 150, 24);
 
     addAndMakeVisible (fcFaustDir = new FilenameComponent ("FAUST directory:",
                                                            File::nonexistent,
@@ -72,6 +76,8 @@ MiscPage::MiscPage ()
     laExternalEditor->setEditable (false, false, false);
     laExternalEditor->setColour (TextEditor::textColourId, Colours::black);
     laExternalEditor->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
+
+    laExternalEditor->setBounds (8, 120, 150, 24);
 
     addAndMakeVisible (fcExternalEditor = new FilenameComponent ("External editor:", File::nonexistent,
                                                                  true, false, false,
@@ -164,11 +170,8 @@ void MiscPage::resized()
     //[UserPreResize] Add your own custom resize code here..
     //[/UserPreResize]
 
-    laDatDir->setBounds (8, 8, 150, 24);
     fcDataDir->setBounds (8, 32, getWidth() - 16, 24);
-    laFaustDir->setBounds (8, 64, 150, 24);
     fcFaustDir->setBounds (8, 88, getWidth() - 16, 24);
-    laExternalEditor->setBounds (8, 120, 150, 24);
     fcExternalEditor->setBounds (8, 144, getWidth() - 16, 24);
     tbAutoCorrect->setBounds (8, 192, getWidth() - 16, 24);
     tbRunSAMBeforeExternal->setBounds (8, 224, getWidth() - 16, 24);
@@ -281,15 +284,15 @@ void MiscPage::readValues()
 
 //==============================================================================
 #if 0
-/*  -- Introjucer information section --
+/*  -- Projucer information section --
 
-    This is where the Introjucer stores the metadata that describe this GUI layout, so
+    This is where the Projucer stores the metadata that describe this GUI layout, so
     make changes in here at your peril!
 
 BEGIN_JUCER_METADATA
 
 <JUCER_COMPONENT documentType="Component" className="MiscPage" componentName="MiscPage"
-                 parentClasses="public Component, public FilenameComponentListener"
+                 parentClasses="public Component, public FilenameComponentListener, public Button::Listener"
                  constructorParams="" variableInitialisers="" snapPixels="8" snapActive="1"
                  snapShown="1" overlayOpacity="0.330" fixedSize="0" initialWidth="600"
                  initialHeight="400">
@@ -298,7 +301,8 @@ BEGIN_JUCER_METADATA
          explicitFocusOrder="0" pos="8 8 150 24" edTextCol="ff000000"
          edBkgCol="0" labelText="Data Directory" editableSingleClick="0"
          editableDoubleClick="0" focusDiscardsChanges="0" fontname="Default font"
-         fontsize="15" bold="0" italic="0" justification="33"/>
+         fontsize="15.00000000000000000000" kerning="0.00000000000000000000"
+         bold="0" italic="0" justification="33"/>
   <GENERICCOMPONENT name="fcDataDir" id="f24633023217d0b6" memberName="fcDataDir"
                     virtualName="" explicitFocusOrder="0" pos="8 32 16M 24" class="FilenameComponent"
                     params="&quot;Synth-A-Modeler data directory:&quot;,&#10;File::nonexistent,&#10;true, true, false,&#10;String::empty, String::empty, &quot;(select the Synth-A-Modeler data directory)&quot;"/>
@@ -306,7 +310,8 @@ BEGIN_JUCER_METADATA
          virtualName="" explicitFocusOrder="0" pos="8 64 150 24" edTextCol="ff000000"
          edBkgCol="0" labelText="FAUST Directory" editableSingleClick="0"
          editableDoubleClick="0" focusDiscardsChanges="0" fontname="Default font"
-         fontsize="15" bold="0" italic="0" justification="33"/>
+         fontsize="15.00000000000000000000" kerning="0.00000000000000000000"
+         bold="0" italic="0" justification="33"/>
   <GENERICCOMPONENT name="fcFaustDir" id="c593cebcb2a05f1d" memberName="fcFaustDir"
                     virtualName="" explicitFocusOrder="0" pos="8 88 16M 24" class="FilenameComponent"
                     params="&quot;FAUST directory:&quot;,&#10;File::nonexistent,&#10;true, true, false,&#10;String::empty, String::empty,&#10;&quot;(select the directory where the faust executable resides)&quot;"/>
@@ -314,7 +319,8 @@ BEGIN_JUCER_METADATA
          virtualName="" explicitFocusOrder="0" pos="8 120 150 24" edTextCol="ff000000"
          edBkgCol="0" labelText="External Editor" editableSingleClick="0"
          editableDoubleClick="0" focusDiscardsChanges="0" fontname="Default font"
-         fontsize="15" bold="0" italic="0" justification="33"/>
+         fontsize="15.00000000000000000000" kerning="0.00000000000000000000"
+         bold="0" italic="0" justification="33"/>
   <GENERICCOMPONENT name="fcExternalEditor" id="34adc001253d375f" memberName="fcExternalEditor"
                     virtualName="" explicitFocusOrder="0" pos="8 144 16M 24" class="FilenameComponent"
                     params="&quot;External editor:&quot;, File::nonexistent,&#10;true, false, false,&#10;String::empty, String::empty,&#10;&quot;(select external editor executable)&quot;"/>

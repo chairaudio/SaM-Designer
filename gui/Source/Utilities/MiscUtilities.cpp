@@ -227,7 +227,7 @@ void Utils::uniquifyPaths(HashMap<String,String>& paths)
     for (int i = 0; i < fileSet.size(); ++i)
     {
         StringArray arr;
-        arr.addTokens(fileSet[i], File::separatorString, "\"");
+        arr.addTokens(fileSet[i], File::getSeparatorString(), "\"");
         sameFiles.set(fileSet[i], arr);
     }
 
@@ -252,11 +252,11 @@ void Utils::uniquifyPaths(HashMap<String,String>& paths)
                 {
                     tmpPath.add(arr[arrSize - 1 - l]);
                 }
-                tmpPath2 = tmpPath.joinIntoString(File::separatorString);
+                tmpPath2 = tmpPath.joinIntoString(File::getSeparatorString());
             }
             else
             {
-                tmpPath2 = k.getValue().joinIntoString(File::separatorString);
+                tmpPath2 = k.getValue().joinIntoString(File::getSeparatorString());
             }
             tmpSet.add(tmpPath2);
             sameFiles2.set(k.getKey(), tmpPath2);

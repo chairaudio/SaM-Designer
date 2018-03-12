@@ -1,24 +1,23 @@
 /*
   ==============================================================================
 
-  This is an automatically generated GUI class created by the Introjucer!
+  This is an automatically generated GUI class created by the Projucer!
 
   Be careful when adding custom code to these files, as only the code within
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
   and re-saved.
 
-  Created with Introjucer version: 3.1.1
+  Created with Projucer version: 5.2.1
 
   ------------------------------------------------------------------------------
 
-  The Introjucer is part of the JUCE library - "Jules' Utility Class Extensions"
-  Copyright 2004-13 by Raw Material Software Ltd.
+  The Projucer is part of the JUCE library.
+  Copyright (c) 2017 - ROLI Ltd.
 
   ==============================================================================
 */
 
-#ifndef __JUCE_HEADER_CAF4156327F718EE__
-#define __JUCE_HEADER_CAF4156327F718EE__
+#pragma once
 
 //[Headers]     -- You can add your own extra header files here --
 #include "JuceHeader.h"
@@ -39,7 +38,7 @@ namespace synthamodeler
 */
 class MiscPage  : public Component,
                   public FilenameComponentListener,
-                  public ButtonListener
+                  public Button::Listener
 {
 public:
     //==============================================================================
@@ -52,9 +51,9 @@ public:
     void readValues();
     //[/UserMethods]
 
-    void paint (Graphics& g);
-    void resized();
-    void buttonClicked (Button* buttonThatWasClicked);
+    void paint (Graphics& g) override;
+    void resized() override;
+    void buttonClicked (Button* buttonThatWasClicked) override;
 
 
 
@@ -85,5 +84,3 @@ private:
 //[EndFile] You can add extra defines here...
 }
 //[/EndFile]
-
-#endif   // __JUCE_HEADER_CAF4156327F718EE__

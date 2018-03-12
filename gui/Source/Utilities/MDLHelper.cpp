@@ -139,7 +139,7 @@ const String MDLHelper::getMDLInfoString(const MDLFile& mdlFile)
     props << "Size: " << String(tmpFile.getSize() / 1024.0, 3) << " KB" << newLine;
     props << "Creation time: " << tmpFile.getCreationTime().formatted("%c") << newLine;
     props << "Modification time: " << tmpFile.getLastModificationTime().formatted("%c") << newLine;
-    props << "On harddisk: " << tmpFile.isOnHardDisk() << newLine;
+    props << "On harddisk: " << (int) tmpFile.isOnHardDisk() << newLine;
 
     return props;
 }
