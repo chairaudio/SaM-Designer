@@ -58,7 +58,7 @@ Depending on your development machine there are project files for several
 platforms. For linux:
 
     cd SaM-Designer
-    cd juce/extras/Projucer/Builds/Linux
+    cd juce/extras/Projucer/Builds/LinuxMakefile
     make
     build/Projucer
 
@@ -74,7 +74,7 @@ Makefile for Linux.
 To compile on Linux:
 
     cd SaM-Designer
-    cd gui/Build/Linux
+    cd gui/Builds/Linux
     make
 
 Run the application:
