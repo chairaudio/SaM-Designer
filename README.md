@@ -74,7 +74,7 @@ Makefile for Linux.
 To compile on Linux:
 
     cd SaM-Designer
-    cd gui/Build/Linux
+    cd gui/Builds/Linux
     make
 
 Run the application:
