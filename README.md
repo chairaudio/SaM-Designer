@@ -37,12 +37,12 @@ The Synth-A-ModelerGUI project is heavily using the [JUCE][1] library.
 
 Clone the Synth-A-Modeler repository:
 
-    git clone --recursive https://github.com/ptrv/SaM-Designer.git
-
+    git clone --recursive https://github.com/chairaudio/SaM-Designer.git
+    
 The `--recursive` switch tells git to pull also the JUCE submodule.
 Without the switch you have to seperately get the submodule.
 
-    git clone https://github.com/ptrv/SaM-Designer.git
+    git clone https://github.com/chairaudio/SaM-Designer.git
     cd SaM-Designer
     git submodule update --init
 
@@ -82,8 +82,7 @@ Run the application:
     build/Synth-A-Modeler-Designer
 
 
-[1]: http://rawmaterialsoftware.com/juce.php
-[2]: https://code.google.com/p/re2/
+[1]: https://juce.com
 
 ## Usage
 
