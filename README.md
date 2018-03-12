@@ -35,6 +35,8 @@ The Synth-A-ModelerGUI project is heavily using the [JUCE][1] library.
 
 ### Get the sources and dependencies
 
+Install Pure-lang and Faust https://github.com/agraef/pure-lang
+
 Clone the Synth-A-Modeler repository:
 
     git clone --recursive https://github.com/chairaudio/SaM-Designer.git
