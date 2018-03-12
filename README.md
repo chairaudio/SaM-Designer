@@ -4,9 +4,10 @@ The Synth-A-Modeler project was carried out at the TU Berlin's Audio
 Communication Group. The
 [**Synth-A-Modeler compiler**](https://github.com/eberdahl/SaM) was
 written by Edgar Berdahl, and the graphical user interface, the
-[**Synth-A-Modeler Designer**](https://github.com/ptrv/SaM-Designer) was
-created by Peter Vasil. We would like to graciously thank Prof. Julius
-O. Smith III, Alexandros Kontogeorgakopoulos, Prof. Stefan Weinzierl,
+[**Synth-A-Modeler Designer**](https://github.com/chairaudio/SaM-Designer) was
+created by [Peter Vasil](http://www.petervasil.net/).
+We would like to graciously thank Prof. Julius O. Smith III,
+Alexandros Kontogeorgakopoulos, Prof. Stefan Weinzierl,
 Prof. Yann Orlarey, and the Alexander von Humboldt foundation for their
 support.
 
