@@ -4,4 +4,4 @@
     ignore = dirty
 [submodule "SaM"]
 	path = SaM
-	url = git://github.com/eberdahl/SaM.git
+	url = git://github.com/chairaudio/SaM.git
