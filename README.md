@@ -19,7 +19,7 @@ support.
 
 ## Project structure
 
-**SaM**: This folder consist Edgar Berdahl's *Synth-A-Modeler compiler*
+**SaM**: This folder consist of a forked *Synth-A-Modeler compiler* by Edgar Berdahl
   and example model files.
 
 <!-- **cmd2**: A C++ version of the *Synth-A-Modeler* compiler (experimental). -->
@@ -42,7 +42,7 @@ Clone the Synth-A-Modeler repository:
 
     git clone --recursive https://github.com/chairaudio/SaM-Designer.git
     
-The `--recursive` switch tells git to pull also the JUCE submodule.
+The `--recursive` switch tells git to pull also the JUCE ans SaM submodules.
 Without the switch you have to seperately get the submodule.
 
     git clone https://github.com/chairaudio/SaM-Designer.git
