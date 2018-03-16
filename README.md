@@ -2,7 +2,7 @@
 
 The Synth-A-Modeler project was carried out at the TU Berlin's Audio
 Communication Group. The
-[**Synth-A-Modeler compiler**](https://github.com/eberdahl/SaM) was
+[**Synth-A-Modeler compiler**](https://github.com/chairaudio/SaM) was
 written by [Edgar Berdahl](http://edgarberdahl.com/), and the graphical user interface, the
 [**Synth-A-Modeler Designer**](https://github.com/chairaudio/SaM-Designer) was
 created by [Peter Vasil](http://www.petervasil.net/).
