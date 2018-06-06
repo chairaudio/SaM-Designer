@@ -54,7 +54,7 @@ Without the switch you have to seperately get the submodule.
 Projucer is part of the JUCE library. It is the project manager for
 JUCE projects. Every time you have to make changes to the
 Synth-A-ModelerGUI projects (i.e. add new source files, change compile
-options), you have to use the Proojucer application. But first it must
+options), you have to use the Projucer application. But first it must
 be compiled.
 
 Depending on your development machine there are project files for several
