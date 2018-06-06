@@ -58,7 +58,7 @@ options), you have to use the Projucer application. But first it must
 be compiled.
 
 Depending on your development machine there are project files for several
-platforms. For linux:
+platforms. For Linux:
 
     cd SaM-Designer
     cd juce/extras/Projucer/Builds/LinuxMakefile
