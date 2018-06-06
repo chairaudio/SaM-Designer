@@ -89,6 +89,8 @@ Run the application:
 
 ## Usage
 
+Make sure that in the Synth-A-Modeler-Designer Preferences the 'Data Directory' points to the directory in which the SAM-preprocessor binary is located (SaM-Designer/SaM).
+
 Please refer to the [Wiki][3] for information on the usage of
 *Synth-A-Modeler Designer*.
 
